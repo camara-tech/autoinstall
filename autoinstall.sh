@@ -4,7 +4,6 @@ function run_autoinstall() {
 
 for line in $(cat /proc/cmdline);
 do
-echo $line
     if [[ "$line" == *"ks="* ]]
     then
         autoinstall_source=${line#ks=}
@@ -16,4 +15,6 @@ echo $line
     fi
 done
 }
+
+run_autoinstall
 
