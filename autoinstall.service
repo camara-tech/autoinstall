@@ -1,0 +1,12 @@
+[Unit]
+Description="oneshot autoinstall service"
+After=basic.target
+Before=multi-user.target
+Conflicts=emergency.target,rescue.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/autoinstall.sh
+
+[Install]
+WantedBy=multi-user.target
