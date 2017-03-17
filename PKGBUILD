@@ -1,6 +1,6 @@
 # Maintainer: Jonathan Camara  <jonathan@jonathancamara.com>
 pkgname=autoinstall # '-bzr', '-git', '-hg' or '-svn'
-pkgver=1.0.0
+pkgver=0.1.0
 pkgrel=1
 pkgdesc="autoinstall based on kernel parameters"
 arch=('any')
@@ -20,18 +20,9 @@ source=("git+ssh://git@github.com/italy-portugal/autoinstall.git#tag=${pkgver}")
 noextract=()
 md5sums=('SKIP')
 
-# Please refer to the 'USING VCS SOURCES' section of the PKGBUILD man page for
-# a description of each element in the source array.
-
 pkgver() {
 	cd "$srcdir/${pkgname}"
-
-# Git, tags available
 	printf "%s" "$(git describe --long | sed 's/\([^-]*-\)g/r\1/;s/-/./g')"
-
-# Git, no tags available
-	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
-
 }
 
 build() {
