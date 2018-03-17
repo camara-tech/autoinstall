@@ -10,3 +10,4 @@ test:
 	prove -v -r t/*.bats
 
 build:
+	makepkg
