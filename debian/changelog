@@ -1,0 +1,5 @@
+autoinstall (1.0.0-1) UNRELEASED; urgency=medium
+
+  * Initial release. (Closes: #CCC-1)
+
+ -- Jonathan Camara <jonathan@jonathancamara.com>  Wed, 27 Jul 2022 15:02:40 -0500

@@ -1,0 +1,12 @@
+Source: autoinstall
+Maintainer: Jonathan Camara <jonathan@jonathancamara.com>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9), bats
+
+Package: autoinstall
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: simplistic auto-install script
+ autoinstall creates a service that automatically runs on the first boot of a system and executes the file specified at the boot prompt.
