@@ -3,7 +3,7 @@ Maintainer: Jonathan Camara <jonathan@jonathancamara.com>
 Section: misc
 Priority: optional
 Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 9), bats
+Build-Depends: debhelper (>= 9)
 
 Package: autoinstall
 Architecture: all
