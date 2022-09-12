@@ -1,4 +1,4 @@
-autoinstall (1.0.0-1) UNRELEASED; urgency=medium
+autoinstall (1.0.0-1) focal; urgency=medium
 
   * Initial release. (Closes: #CCC-1)
 
