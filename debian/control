@@ -2,7 +2,7 @@ Source: autoinstall
 Section: misc
 Priority: optional
 Maintainer: Jonathan Camara <jonathan@jonathancamara.com>
-Build-Depends: debhelper-compat (= 13), bats
+Build-Depends: debhelper-compat (= 12), bats
 Standards-Version: 4.6.0
 Rules-Requires-Root: no
 
